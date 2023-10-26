@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import './peliculas-poster.css';
 //* rafce
-const PeliculasPoster = ({peliculas}) => {
 
+const PeliculasPoster = ({peliculas}) => {
   return (
     <div className="peliculas-grid">
       {peliculas.map(pelicula => (
@@ -11,7 +12,7 @@ const PeliculasPoster = ({peliculas}) => {
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 export default PeliculasPoster;
