@@ -3,7 +3,7 @@ import './home.css';
 import { getPeliculasPopulares } from '../../services/peliculas-service';
 import PeliculasPoster from '../../components/peliculas-poster/PeliculasPoster';
 
-const Home = () => {
+const Home = ({searchResults}) => {
   const [peliculas, setPeliculas] = useState([]);
 
   useEffect(() => {
@@ -17,6 +17,12 @@ const Home = () => {
     };
     fetchPeliculas();
   },[])
+
+  useEffect(() => {
+    if(searchResults.length > 0) {
+      setPeliculas(searchResults);
+    }
+  }, [searchResults]);
   return (
     <div className="home-page">
       <PeliculasPoster peliculas={peliculas}/>
