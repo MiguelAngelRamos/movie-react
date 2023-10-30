@@ -19,3 +19,10 @@ export const getPeliculasPopulares = async () => {
  }
 };
 
+export const buscarPeliculas = async (query) => {
+  try {
+    const response = await fetch();
+  } catch (error) {
+    
+  }
+}

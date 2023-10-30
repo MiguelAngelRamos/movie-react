@@ -5,6 +5,11 @@ import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 function App() {
  
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearch = () => {
+    
+  }
   return (
     <Router>
       <Navbar/>
