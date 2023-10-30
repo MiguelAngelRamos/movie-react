@@ -1,0 +1,31 @@
+.peliculas-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.pelicula-card {
+  flex: 1 1 200px;
+  background-color: #22323E;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  margin: 10px;
+}
+
+.pelicula-card:hover {
+  transform: scale(1.05);
+}
+.pelicula-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pelicula-card h3 {
+  text-align: center;
+  padding: 10px;
+}
