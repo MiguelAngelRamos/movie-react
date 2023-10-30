@@ -8,8 +8,12 @@ const Home = () => {
 
   useEffect(() => {
     const fetchPeliculas = async () => {
-    const data = await getPeliculasPopulares();
-    setPeliculas(data.results);
+    try {
+      const data = await getPeliculasPopulares();
+      setPeliculas(data.results);
+    } catch (error) {
+      console.log(error);
+    }
     };
     fetchPeliculas();
   },[])

@@ -2,7 +2,16 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div>Navbar Navegacion superior en el top</div>
+    <nav className="navbar">
+      <div className="navbar-brand">My Movies</div>
+      <form>
+        <input 
+          type="text"
+          placeholder='Buscar Películas'
+          />
+         <button type="submit">Buscar</button>
+      </form>
+    </nav>
   )
 }
 

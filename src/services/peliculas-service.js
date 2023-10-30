@@ -4,6 +4,7 @@ const API_KEY = '0ffa38e5464cf85244a57b5a7724bd12';
 export const getPeliculasPopulares = async () => {
  //* https://api.themoviedb.org/3/movie/popular?api_key=0ffa38e5464cf85244a57b5a7724bd12
  //* https://api.themoviedb.org/3/movie/popular?api_key
+
  try {
   //* alt + 96 
   const response = await fetch(`${API_URL}/popular?api_key=${API_KEY}`);
