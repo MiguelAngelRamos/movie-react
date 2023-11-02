@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './home.css';
 import { getPeliculasPopulares } from '../../services/peliculas-service';
 import PeliculasPoster from '../../components/peliculas-poster/PeliculasPoster';
@@ -19,7 +19,7 @@ const Home = ({searchResults}) => {
   },[])
 
   useEffect(() => {
-    if(searchResults.length > 0) {
+    if(searchResults?.length > 0) {
       setPeliculas(searchResults);
     }
   }, [searchResults]);
